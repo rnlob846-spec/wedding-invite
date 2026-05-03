@@ -3,6 +3,7 @@ import bg from "./assets/bg.jpg";
 import img1 from "./assets/img1.jpg";
 import img2 from "./assets/img2.jpg";
 import img3 from "./assets/img3.jpg";
+
 function App() {
   const [guestNumber, setGuestNumber] = useState(null);
   const [guests, setGuests] = useState(1);
@@ -55,7 +56,7 @@ Looking forward to the celebration 💛`;
   const [openDoor, setOpenDoor] = useState(false);
   const [timeLeft, setTimeLeft] = useState("");
 
-  const weddingDate = new Date("December 15, 2026").getTime();
+  const weddingDate = new Date("july 4, 2026").getTime();
 const [selectedImg, setSelectedImg] = useState(null);
   useEffect(() => {
     const interval = setInterval(() => {
@@ -151,9 +152,9 @@ const [selectedImg, setSelectedImg] = useState(null);
     />
   ))}
 </div>
-      <h1 className="names">Aleena Asharaf</h1>
-<p className="and">&</p>
-<h1 className="names">Muhammed Ashik</h1>
+      <h1 className="title"> "To complete our deen, we begin our journey together in the name of Allah."</h1>
+
+
           
   
   
@@ -200,12 +201,15 @@ const [selectedImg, setSelectedImg] = useState(null);
 </div>
             <h2 className="title">Bride</h2>
 
-            <p className="details">
+            <p className="cursive">
               D/o<br />
               <b>Asharaf M A</b><br />
               &<br />
               <b>Asma Asharaf</b>
             </p>
+            <p3 className="details">
+              MUSLIM VEETIL HOUSE ,ELAVALLY POST OFFICE <br />
+              </p3>
 
             <button
               className="btn"
@@ -323,6 +327,9 @@ const [selectedImg, setSelectedImg] = useState(null);
               Sunday, July 5th<br />
               With love, laughter & togetherness
             </p>
+            <p className="details elegant">Tulasi Auditorium
+, Attoor</p>
+             
               {/* 👇 ADD THIS */}
     <button
       className="btn"
@@ -436,9 +443,9 @@ const [selectedImg, setSelectedImg] = useState(null);
               With hearts full of faith and love,
             </p>
 
-            <h2 className="names">Aleena Asharaf</h2>
+            <h2 className="title">Aleena Asharaf</h2>
             <p className="and">&</p>
-            <h2 className="names">Muhammed Ashik</h2>
+            <h2 className="title">Muhammed  Ashik</h2>
 
             <div className="divider"></div>
 
@@ -447,13 +454,13 @@ const [selectedImg, setSelectedImg] = useState(null);
               the sacred union of their Nikah
             </p>
 
-            <p className="highlight">
+            <p className="cursive elegant">
               On the blessed day of<br />
-              <b>Saturday, the Fourth of July</b>
+              <b>Saturday, the 4th of July</b>
             </p>
 
             <p className="details">
-              at Elavally
+              EMPEES AUDITORIUM, VENKITANGU, THRISSUR
             </p>
 
             <div className="divider"></div>
@@ -538,7 +545,7 @@ const [selectedImg, setSelectedImg] = useState(null);
 
 {/* 👇 SHOW AFTER SUBMIT */}
 {guestNumber && (
-  <p className="cursive guest-number">
+  <p className="cursive guest-number"> 
     💛 You are guest #{guestNumber}
   </p>
 )}
