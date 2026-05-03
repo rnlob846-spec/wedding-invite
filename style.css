@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.cover {
+  height: 100vh;
+  background: linear-gradient(to bottom, #000000aa, #000000aa),
+              url('https://images.unsplash.com/photo-1519741497674-611481863552');
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  padding: 12px 20px;
+  background: gold;
+  border: none;
+  cursor: pointer;
+}
+
+.card {
+  padding: 40px;
+}
+
+.hidden {
+  display: none;
+}
