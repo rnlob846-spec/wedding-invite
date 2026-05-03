@@ -200,8 +200,9 @@ const [selectedImg, setSelectedImg] = useState(null);
   ))}
 </div>
             <h2 className="title">Bride</h2>
+             <div className="divider"></div>
 
-            <p className="cursive">
+            <p className="details elegant">
               D/o<br />
               <b>Asharaf M A</b><br />
               &<br />
@@ -211,6 +212,9 @@ const [selectedImg, setSelectedImg] = useState(null);
               MUSLIM VEETIL HOUSE ,ELAVALLY POST OFFICE <br />
               </p3>
 
+
+           
+              
             <button
               className="btn"
               onClick={() =>
