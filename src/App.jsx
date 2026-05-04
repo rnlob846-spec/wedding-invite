@@ -221,7 +221,7 @@ const [selectedImg, setSelectedImg] = useState(null);
                 document.getElementById("venue").scrollIntoView({ behavior: "smooth" })
               }
             >
-              Next
+            WHERE WE WED
             </button>
           </div>
         </section>
@@ -280,73 +280,18 @@ const [selectedImg, setSelectedImg] = useState(null);
         <button
         className="btn"
         onClick={() =>
-          document.querySelector(".reception").scrollIntoView({
-            behavior: "smooth"
-          })
+         document.getElementById("moments").scrollIntoView({
+  behavior: "smooth"
+})
         }
       >
-        Next →
+        Our Love Story
       </button>
 
     </div>
   </div>
 </section>
 
-        {/* RECEPTION */}
-        <section className="section reception">
-          <div className="card">  {/* ✨ Sparkles */}
-  <div className="sparkles">
-    {[...Array(12)].map((_, i) => (
-      <span
-        key={i}
-        style={{
-          top: `${Math.random() * 100}%`,
-          left: `${Math.random() * 100}%`,
-          animationDuration: `${3 + Math.random() * 3}s`
-        }}
-      />
-    ))}
-  </div>
-  <div className="dust">
-  {[...Array(30)].map((_, i) => (
-    <span
-      key={i}
-      style={{
-        left: `${Math.random() * 100}%`,
-        animationDuration: `${8 + Math.random() * 8}s`,
-        animationDelay: `${Math.random() * 5}s`,
-        opacity: Math.random() * 0.6 + 0.2,
-        transform: `scale(${Math.random() * 0.8 + 0.4})`
-      }}
-    />
-  ))}
-</div>
-            <h2 className="title">Reception</h2>
-
-            <div className="divider"></div>
-
-            <p className="cursive">Join us for an evening of celebration</p>
-
-            <p className="details">
-              Sunday, July 5th<br />
-              With love, laughter & togetherness
-            </p>
-            <p className="details elegant">Tulasi Auditorium
-, Attoor</p>
-             
-              {/* 👇 ADD THIS */}
-    <button
-      className="btn"
-      onClick={() =>
-        document.getElementById("moments").scrollIntoView({
-          behavior: "smooth"
-        })
-      }
-    >
-      Next →
-    </button>
-          </div>
-        </section> 
          {/* MOMENTS */}
  <section className="section arabic" id="moments">
   <div className="card">  {/* ✨ Sparkles */}
@@ -406,7 +351,7 @@ const [selectedImg, setSelectedImg] = useState(null);
         })
       }
     >
-      Next →
+    "The Vow"
     </button>
   </div>
 </section>
@@ -473,7 +418,63 @@ const [selectedImg, setSelectedImg] = useState(null);
               "And We created you in pairs"<br />
               <span>(Qur’an 78:8)</span>
             </p>
-            <button
+        <button
+  className="btn"
+  onClick={() =>
+    document.getElementById("reception").scrollIntoView({
+      behavior: "smooth"
+    })
+  }
+>
+  👰 🤵
+</button> 
+          </div>
+        </section> 
+        
+        {/* RECEPTION */}
+         <section className="section arabic" id="reception">
+          <div className="card">  {/* ✨ Sparkles */}
+  <div className="sparkles">
+    {[...Array(12)].map((_, i) => (
+      <span
+        key={i}
+        style={{
+          top: `${Math.random() * 100}%`,
+          left: `${Math.random() * 100}%`,
+          animationDuration: `${3 + Math.random() * 3}s`
+        }}
+      />
+    ))}
+  </div>
+  <div className="dust">
+  {[...Array(30)].map((_, i) => (
+    <span
+      key={i}
+      style={{
+        left: `${Math.random() * 100}%`,
+        animationDuration: `${8 + Math.random() * 8}s`,
+        animationDelay: `${Math.random() * 5}s`,
+        opacity: Math.random() * 0.6 + 0.2,
+        transform: `scale(${Math.random() * 0.8 + 0.4})`
+      }}
+    />
+  ))}
+</div>
+            <h2 className="title">Reception</h2>
+
+            <div className="divider"></div>
+
+            <p className="cursive">Join us for an evening of celebration</p>
+
+            <p className="details">
+              Sunday, July 5th<br />
+              With love, laughter & togetherness
+            </p>
+            <p className="details elegant">Tulasi Auditorium
+, Attoor</p>
+             
+              {/* 👇 ADD THIS */}
+    <button
   className="btn"
   onClick={() =>
     document.getElementById("initials").scrollIntoView({
@@ -481,10 +482,10 @@ const [selectedImg, setSelectedImg] = useState(null);
     })
   }
 >
-   👰 🤵 
+  Our Heart ❤️
 </button>
           </div>
-        </section>
+        </section> 
          <section className="section initials-page" id="initials">
           <div className="initials-container">
 
