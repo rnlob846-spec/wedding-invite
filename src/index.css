@@ -1341,10 +1341,7 @@ body {
   width: 70px;
   height: 70px;
 }
-.image-popup img {
-  width: 95%;
-  height: auto;
-}
+
 body {
   overflow-x: hidden;
 }
