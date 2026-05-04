@@ -482,7 +482,7 @@ const [selectedImg, setSelectedImg] = useState(null);
     })
   }
 >
-  Our Heart ❤️
+  A ❤️ A
 </button>
           </div>
         </section> 
